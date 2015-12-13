@@ -2,7 +2,7 @@ epcData <- read.table("household_power_consumption.txt",header = TRUE,sep = ";",
 epcDataSub <- subset(epcData,Date == "1/2/2007" | Date == "2/2/2007")
 epcDataSub$Datetime <- strptime(paste(epcDataSub$Date,' ',epcDataSub$Time), format = "%d/%m/%Y %H:%M:%S")
 
-png(filename = "plot4.png")
+png(filename = "plot4.png",width = 480,height = 480)
 
 par(mfcol = c(2,2))
 
