@@ -7,7 +7,7 @@ png(filename = "plot4.png",width = 480,height = 480)
 par(mfcol = c(2,2))
 
 #plot 1,1
-with(epcDataSub, plot(Datetime, Global_active_power, type = 'l',ylab = "Global Active Power (kilowatts)",xlab = ''))
+with(epcDataSub, plot(Datetime, Global_active_power, type = 'l',ylab = "Global Active Power",xlab = ''))
 
 #plot 2,1
 with(epcDataSub, plot(Datetime, Sub_metering_1, type = 'n',ylab = "Energy sub metering",xlab = ''))
